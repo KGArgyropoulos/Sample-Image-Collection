@@ -1,0 +1,90 @@
+/* Common styles for the main layout */
+.main-layout {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+}
+
+/* Styles for authenticated state */
+.main-layout.authenticated {
+	background-color: #e0ffe0; /* Light green background for authenticated users */
+	color: #2c662d; /* Dark green text */
+}
+
+.main-layout.authenticated .header {
+	background-color: #2c662d; /* Dark green header */
+	color: white;
+}
+
+.main-layout.authenticated .content {
+	border: 1px solid #2c662d;
+	padding: 20px;
+	background-color: #ffffff;
+}
+
+/* Styles for unauthenticated state */
+.main-layout.unauthenticated {
+	background-color: #ffe0e0; /* Light red background for unauthenticated users */
+	color: #662c2c; /* Dark red text */
+}
+
+.main-layout.unauthenticated .header {
+	background-color: #662c2c; /* Dark red header */
+	color: white;
+}
+
+.main-layout.unauthenticated .content {
+	border: 1px solid #662c2c;
+	padding: 20px;
+	background-color: #ffffff;
+}
+
+/* Common header styles */
+.header {
+	padding: 10px;
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+/* Common content styles */
+.content {
+	border-radius: 8px;
+}
+
+/* Styles for login component */
+.login {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.login .field {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.login .field label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.login .field input,
+.login .field .p-password {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 8px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+.login .field input.invalid,
+.login .field .p-password.invalid {
+	border-color: #ff4d4f; /* Red border for invalid inputs */
+}
+
+.login .field small.invalid {
+	color: #ff4d4f; /* Red text for error messages */
+	display: block;
+	margin-top: 5px;
+}

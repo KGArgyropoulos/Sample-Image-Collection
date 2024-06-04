@@ -1,0 +1,54 @@
+/* dialog.css */
+.dialog-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 20px;
+	max-width: 400px;
+	width: 100%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-title {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.dialog-field {
+	margin-bottom: 15px;
+}
+
+.dialog-field label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.dialog-field input,
+.dialog-field textarea {
+	width: calc(100% - 20px);
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.dialog-field textarea {
+	height: 100px; /* Adjust height as needed */
+}
+
+.dialog-field button {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.dialog-field button:hover {
+	background-color: #0056b3;
+}

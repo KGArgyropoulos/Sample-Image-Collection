@@ -2,7 +2,6 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const Page404 = () => {
-	console.log('here');
 	const location = useLocation();
 	const navigate = useNavigate();
 

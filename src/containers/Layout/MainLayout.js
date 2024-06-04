@@ -20,7 +20,7 @@ const MainLayout = () => {
 		>
 			<div className='header'>
 				{authState === 'AUTHENTICATED'
-					? 'Welcome to Your Profile'
+					? `Welcome ${username}`
 					: 'Please Log In'}
 			</div>
 			<div className='content'>
